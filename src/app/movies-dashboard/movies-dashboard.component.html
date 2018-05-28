@@ -1,0 +1,14 @@
+<div class="row-fluid">
+  <ul class="thumbnails">
+    <li class="span4" *ngFor="let movie of movies">
+      <a routerLink="/movie/{{movie.id}}">
+        <div class="thumbnail">
+          <div class="caption">
+            <h4>{{ movie.title }}</h4>
+            <p>{{ movie.genre }}</p>
+          </div>
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>
